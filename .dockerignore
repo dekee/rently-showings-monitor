@@ -1,0 +1,12 @@
+.gradle
+.idea
+.vscode
+build
+data
+debug
+storage-state.json
+*.db
+*.log
+**/node_modules
+
+

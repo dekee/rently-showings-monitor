@@ -1,0 +1,1561 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:100,200,300,400,500,600,700,800,900"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900"><script type="text/javascript" async="" src="https://cdn.heapanalytics.com/js/heap-3983275263.js"></script><script async="" src="https://www.clarity.ms/tag/qu4pnh9iaw"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://unpkg.com/pace-js@1.0.2/pace.min.js"></script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?version=4.8.0&amp;features=IntersectionObserver"></script><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><title>React App</title><script defer="defer" src="/static/js/main.640b213c.js"></script><link rel="stylesheet" type="text/css" href="/static/css/6853.6bd90fd1.chunk.css"><style data-jss="" data-meta="MuiSnackbar">
+.MuiSnackbar-root {
+  left: 8px;
+  right: 8px;
+  display: flex;
+  z-index: 1400;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+.MuiSnackbar-anchorOriginTopCenter {
+  top: 8px;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginTopCenter {
+    top: 24px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+}
+.MuiSnackbar-anchorOriginBottomCenter {
+  bottom: 8px;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginBottomCenter {
+    left: 50%;
+    right: auto;
+    bottom: 24px;
+    transform: translateX(-50%);
+  }
+}
+.MuiSnackbar-anchorOriginTopRight {
+  top: 8px;
+  justify-content: flex-end;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginTopRight {
+    top: 24px;
+    left: auto;
+    right: 24px;
+  }
+}
+.MuiSnackbar-anchorOriginBottomRight {
+  bottom: 8px;
+  justify-content: flex-end;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginBottomRight {
+    left: auto;
+    right: 24px;
+    bottom: 24px;
+  }
+}
+.MuiSnackbar-anchorOriginTopLeft {
+  top: 8px;
+  justify-content: flex-start;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginTopLeft {
+    top: 24px;
+    left: 24px;
+    right: auto;
+  }
+}
+.MuiSnackbar-anchorOriginBottomLeft {
+  bottom: 8px;
+  justify-content: flex-start;
+}
+@media (min-width:600px) {
+  .MuiSnackbar-anchorOriginBottomLeft {
+    left: 24px;
+    right: auto;
+    bottom: 24px;
+  }
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss6 {
+  width: 100%;
+  font-weight: 500;
+}
+.jss7 {
+  background-color: #177BB5;
+}
+.jss8 {
+  color: rgb(168, 33, 34);
+  border: 2px solid #fb9ba9;
+  background-color: #ffd2d8;
+}
+.jss9 {
+  background-color: #1b4376;
+}
+.jss10 {
+  color: #374151;
+  border: 2px solid #FE7D24;
+  font-weight: 700;
+  background-color: #FEE6D5;
+}
+.jss11 {
+  opacity: 0.9;
+  font-size: 20px;
+  margin-right: 8px;
+}
+.jss12 {
+  display: flex;
+  align-items: center;
+}
+.jss13 * {
+  fill: currentColor;
+}
+.jss14 {
+  color: #FFFFFF;
+  font-size: 16px;
+  text-align: center;
+  font-family: Quicksand;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-transform: none;
+  text-decoration: underline;
+}
+</style><style data-jss="" data-meta="MuiCssBaseline">
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: #35323d;
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: Quicksand,Montserrat,sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: #f7f7fa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #f7f7fa;
+}
+</style><style data-jss="" data-meta="MuiBox">
+
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiBox">
+</style><style data-jss="" data-meta="MuiDivider">
+.MuiDivider-root {
+  border: none;
+  height: 1px;
+  margin: 0;
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.MuiDivider-absolute {
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.MuiDivider-inset {
+  margin-left: 72px;
+}
+.MuiDivider-light {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.MuiDivider-middle {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.MuiDivider-vertical {
+  width: 1px;
+  height: 100%;
+}
+.MuiDivider-flexItem {
+  height: auto;
+  align-self: stretch;
+}
+</style><style data-jss="" data-meta="MuiGrid">
+.MuiGrid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.MuiGrid-item {
+  margin: 0;
+  box-sizing: border-box;
+}
+.MuiGrid-zeroMinWidth {
+  min-width: 0;
+}
+.MuiGrid-direction-xs-column {
+  flex-direction: column;
+}
+.MuiGrid-direction-xs-column-reverse {
+  flex-direction: column-reverse;
+}
+.MuiGrid-direction-xs-row-reverse {
+  flex-direction: row-reverse;
+}
+.MuiGrid-wrap-xs-nowrap {
+  flex-wrap: nowrap;
+}
+.MuiGrid-wrap-xs-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.MuiGrid-align-items-xs-center {
+  align-items: center;
+}
+.MuiGrid-align-items-xs-flex-start {
+  align-items: flex-start;
+}
+.MuiGrid-align-items-xs-flex-end {
+  align-items: flex-end;
+}
+.MuiGrid-align-items-xs-baseline {
+  align-items: baseline;
+}
+.MuiGrid-align-content-xs-center {
+  align-content: center;
+}
+.MuiGrid-align-content-xs-flex-start {
+  align-content: flex-start;
+}
+.MuiGrid-align-content-xs-flex-end {
+  align-content: flex-end;
+}
+.MuiGrid-align-content-xs-space-between {
+  align-content: space-between;
+}
+.MuiGrid-align-content-xs-space-around {
+  align-content: space-around;
+}
+.MuiGrid-justify-xs-center {
+  justify-content: center;
+}
+.MuiGrid-justify-xs-flex-end {
+  justify-content: flex-end;
+}
+.MuiGrid-justify-xs-space-between {
+  justify-content: space-between;
+}
+.MuiGrid-justify-xs-space-around {
+  justify-content: space-around;
+}
+.MuiGrid-justify-xs-space-evenly {
+  justify-content: space-evenly;
+}
+.MuiGrid-spacing-xs-1 {
+  width: calc(100% + 8px);
+  margin: -4px;
+}
+.MuiGrid-spacing-xs-1 > .MuiGrid-item {
+  padding: 4px;
+}
+.MuiGrid-spacing-xs-2 {
+  width: calc(100% + 16px);
+  margin: -8px;
+}
+.MuiGrid-spacing-xs-2 > .MuiGrid-item {
+  padding: 8px;
+}
+.MuiGrid-spacing-xs-3 {
+  width: calc(100% + 24px);
+  margin: -12px;
+}
+.MuiGrid-spacing-xs-3 > .MuiGrid-item {
+  padding: 12px;
+}
+.MuiGrid-spacing-xs-4 {
+  width: calc(100% + 32px);
+  margin: -16px;
+}
+.MuiGrid-spacing-xs-4 > .MuiGrid-item {
+  padding: 16px;
+}
+.MuiGrid-spacing-xs-5 {
+  width: calc(100% + 40px);
+  margin: -20px;
+}
+.MuiGrid-spacing-xs-5 > .MuiGrid-item {
+  padding: 20px;
+}
+.MuiGrid-spacing-xs-6 {
+  width: calc(100% + 48px);
+  margin: -24px;
+}
+.MuiGrid-spacing-xs-6 > .MuiGrid-item {
+  padding: 24px;
+}
+.MuiGrid-spacing-xs-7 {
+  width: calc(100% + 56px);
+  margin: -28px;
+}
+.MuiGrid-spacing-xs-7 > .MuiGrid-item {
+  padding: 28px;
+}
+.MuiGrid-spacing-xs-8 {
+  width: calc(100% + 64px);
+  margin: -32px;
+}
+.MuiGrid-spacing-xs-8 > .MuiGrid-item {
+  padding: 32px;
+}
+.MuiGrid-spacing-xs-9 {
+  width: calc(100% + 72px);
+  margin: -36px;
+}
+.MuiGrid-spacing-xs-9 > .MuiGrid-item {
+  padding: 36px;
+}
+.MuiGrid-spacing-xs-10 {
+  width: calc(100% + 80px);
+  margin: -40px;
+}
+.MuiGrid-spacing-xs-10 > .MuiGrid-item {
+  padding: 40px;
+}
+.MuiGrid-grid-xs-auto {
+  flex-grow: 0;
+  max-width: none;
+  flex-basis: auto;
+}
+.MuiGrid-grid-xs-true {
+  flex-grow: 1;
+  max-width: 100%;
+  flex-basis: 0;
+}
+.MuiGrid-grid-xs-1 {
+  flex-grow: 0;
+  max-width: 8.333333%;
+  flex-basis: 8.333333%;
+}
+.MuiGrid-grid-xs-2 {
+  flex-grow: 0;
+  max-width: 16.666667%;
+  flex-basis: 16.666667%;
+}
+.MuiGrid-grid-xs-3 {
+  flex-grow: 0;
+  max-width: 25%;
+  flex-basis: 25%;
+}
+.MuiGrid-grid-xs-4 {
+  flex-grow: 0;
+  max-width: 33.333333%;
+  flex-basis: 33.333333%;
+}
+.MuiGrid-grid-xs-5 {
+  flex-grow: 0;
+  max-width: 41.666667%;
+  flex-basis: 41.666667%;
+}
+.MuiGrid-grid-xs-6 {
+  flex-grow: 0;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+.MuiGrid-grid-xs-7 {
+  flex-grow: 0;
+  max-width: 58.333333%;
+  flex-basis: 58.333333%;
+}
+.MuiGrid-grid-xs-8 {
+  flex-grow: 0;
+  max-width: 66.666667%;
+  flex-basis: 66.666667%;
+}
+.MuiGrid-grid-xs-9 {
+  flex-grow: 0;
+  max-width: 75%;
+  flex-basis: 75%;
+}
+.MuiGrid-grid-xs-10 {
+  flex-grow: 0;
+  max-width: 83.333333%;
+  flex-basis: 83.333333%;
+}
+.MuiGrid-grid-xs-11 {
+  flex-grow: 0;
+  max-width: 91.666667%;
+  flex-basis: 91.666667%;
+}
+.MuiGrid-grid-xs-12 {
+  flex-grow: 0;
+  max-width: 100%;
+  flex-basis: 100%;
+}
+@media (min-width:600px) {
+  .MuiGrid-grid-sm-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-sm-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-sm-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-sm-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-sm-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-sm-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-sm-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-sm-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-sm-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-sm-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-sm-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-sm-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-sm-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .MuiGrid-grid-md-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-md-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-md-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-md-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-md-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-md-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-md-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-md-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-md-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-md-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-md-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-md-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-md-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-md-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .MuiGrid-grid-lg-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-lg-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-lg-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-lg-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-lg-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-lg-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-lg-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-lg-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-lg-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-lg-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-lg-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-lg-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-lg-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-lg-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .MuiGrid-grid-xl-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xl-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xl-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xl-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xl-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xl-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xl-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xl-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xl-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xl-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xl-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xl-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xl-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss89 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #EDF4FF;
+}
+@media (min-width:600px) and (max-width:1279.95px) {
+  .jss89 {
+    min-width: 720px;
+  }
+}
+@media (max-width:599.95px) {
+  .jss89 {
+    min-width: 300px;
+  }
+}
+@media (max-width:1279.95px) {
+  .jss89 {
+    padding: 20px 20px 0px 20px;
+  }
+}
+@media (min-width:1280px) {
+  .jss89 {
+    padding: 40px 50px 0px 50px;
+  }
+}
+.jss90 {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width:1279.95px) {
+  .jss90 {
+    height: 75%;
+  }
+}
+@media (max-width:599.95px) {
+  .jss90 {
+    height: 71%;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (min-width:1280px) {
+  .jss90 {
+    height: 51px;
+  }
+}
+@media (min-width:1920px) {
+  .jss90 {
+    height: 70%;
+  }
+}
+.jss91 {
+  outline: none;
+}
+@media (min-width:600px) and (max-width:1279.95px) {
+  .jss91 {
+    width: 34%;
+    height: 33px;
+  }
+}
+@media (min-width:600px) and (max-width:1279.95px) {
+  .jss92 {
+    width: 94%;
+  }
+}
+.jss93 {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width:1279.95px) {
+  .jss93 {
+    height: 100%;
+    flex-direction: column;
+  }
+}
+@media (max-width:599.95px) {
+  .jss93 {
+    height: 158px;
+    margin-top: 12px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.jss94 {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width:1280px) {
+  .jss94 {
+    width: 70%;
+  }
+}
+@media (min-width:1920px) {
+  .jss94 {
+    width: 70%;
+    height: 50%;
+  }
+}
+@media (max-width:1279.95px) {
+  .jss94 {
+    width: 93%;
+    height: 55%;
+  }
+}
+@media (max-width:599.95px) {
+  .jss94 {
+    width: 93%;
+    height: 106px;
+  }
+}
+.jss95 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.jss96 {
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Quicksand, sans-serif;
+  font-weight: bold;
+}
+.jss96 a {
+  color: #35323D;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+}
+.jss97 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width:599.95px) {
+  .jss97 {
+    height: 78px;
+  }
+}
+.jss98 {
+  display: flex;
+  margin-top: 20px;
+}
+.jss99 {
+  width: 185px;
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+@media (max-width:1279.95px) {
+  .jss99 {
+    width: 50%;
+  }
+}
+@media (max-width:599.95px) {
+  .jss99 {
+    width: 88%;
+  }
+}
+.jss100 {
+  width: 18px;
+  height: 18px;
+}
+.jss100 path {
+  fill: #35323D;
+}
+@media (max-width:1279.95px) {
+  .jss100 {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width:599.95px) {
+  .jss100 {
+    width: 22px;
+    height: 22px;
+  }
+}
+.jss101 {
+  width: 100%;
+  height: 2px;
+  margin-top: 34px;
+}
+@media (max-width:599.95px) {
+  .jss101 {
+    margin-top: 26px;
+  }
+}
+.jss102 {
+  color: #737284;
+  font-size: 12px;
+  margin-top: 11px;
+  text-align: center;
+  font-family: Montserrat Medium, sans-serif;
+  margin-bottom: 11px;
+}
+@media (min-width:1280px) {
+  .jss102 {
+    font-size: 13px;
+    padding-right: 36px;
+  }
+}
+.jss102 a {
+  color: #737284;
+  cursor: pointer;
+  margin-left: 5px;
+  user-select: none;
+}
+@media (min-width:565px) and (max-width:749.95px) {
+  .jss103 {
+    min-width: 100% !important;
+  }
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss15 {
+  height: 100%;
+  overflow: auto;
+}
+@media (min-width:1280px) and (max-width:1279.95px) {
+  .jss15 {
+    flex-direction: column;
+  }
+}
+.jss16 {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 0 0 6px 0 rgba(174,182,191,0.2), 0 2px 20px 0 rgba(174,182,191,0.1);
+  background-color: #FFFFFF;
+}
+@media (min-width:750px) and (max-width:1199.95px) {
+  .jss16 {
+    min-width: 720px;
+  }
+}
+@media (max-width:599.95px) {
+  .jss16 {
+    z-index: 1;
+    min-width: 300px;
+  }
+}
+.jss17 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width:1279.95px) {
+  .jss17 {
+    width: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .jss17 {
+    width: 100%;
+    align-items: center;
+  }
+}
+.jss18 {
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  font-family: Quicksand, sans-serif;
+  font-weight: bold;
+  margin-block: auto;
+}
+.jss19 {
+  color: #177BB5;
+  cursor: pointer;
+  font-weight: bold;
+  padding-left: 8px;
+}
+.jss20 {
+  outline: none;
+}
+.jss21 {
+  height: 45px;
+}
+</style><style data-jss="" data-meta="makeStyles">
+</style><style data-jss="" data-meta="makeStyles">
+@media (max-width:1279.95px) {
+  .jss29 {
+    width: 100% !important;
+  }
+}
+.jss30 {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width:599.95px) {
+  .jss30 {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+.jss31 {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (max-width:599.95px) {
+  .jss31 {
+    width: 100%;
+  }
+}
+.jss32 {
+  white-space: nowrap;
+}
+.jss33 {
+  gap: 16px;
+  display: flex;
+  margin-top: 24px;
+}
+@media (max-width:1279.95px) {
+  .jss33 {
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+}
+.jss34 {
+  min-width: 1169px;
+  margin-top: 30px;
+}
+@media (max-width:1279.95px) {
+  .jss34 {
+    min-width: 100%;
+  }
+}
+.jss35 {
+  display: grid;
+  text-align: center;
+  grid-template-rows: 1fr;
+}
+@media (max-width:1279.95px) {
+  .jss35 {
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width:459.95px) {
+  .jss35 {
+    grid-template-columns: 0fr 1fr;
+  }
+}
+.jss36 {
+  display: grid;
+  text-align: center;
+  line-height: 1em;
+  grid-template-columns: repeat(8, 1fr);
+}
+.jss36 td {
+  color: #35323d;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  line-height: 15px;
+}
+@media (max-width:859.95px) {
+  .jss36 {
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+.jss37 {
+  display: grid;
+  text-align: center;
+  line-height: 1em;
+  grid-template-columns: repeat(7, 1fr);
+}
+@media (max-width:1279.95px) {
+  .jss37 {
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+.jss38 {
+  background: #FEF1F1;
+}
+.jss38 td {
+  color: #9CA3B0;
+}
+.jss39 {
+  background: #F0F1F5;
+}
+.jss39 td {
+  color: #9CA3B0;
+}
+.jss40 {
+  display: grid;
+  text-align: center;
+  line-height: 1em;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width:1279.95px) {
+  .jss40 {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+.jss41 {
+  min-width: 1169px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+@media (max-width:1279.95px) {
+  .jss41 {
+    min-width: 100%;
+  }
+}
+.jss42 {
+  color: #9ca1ab !important;
+  padding: 10px;
+  font-size: 14px;
+  font-family: Quicksand, sans-serif;
+  font-weight: bold;
+  line-height: 15px;
+}
+@media (max-width:859.95px) {
+  .jss42 {
+    display: flex;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+}
+.jss43 {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width:859.95px) {
+  .jss43 {
+    gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+@media (max-width:474.95px) {
+  .jss43 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .jss43 div:last-of-type > svg {
+    margin-left: 15px;
+  }
+}
+}
+.jss44 {
+  min-width: 1169px;
+  margin-bottom: 30px;
+}
+@media (max-width:1279.95px) {
+  .jss44 {
+    min-width: 100%;
+  }
+}
+.jss45 {
+  color: #9CA1AB;
+  font-size: 14px;
+  font-family: Quicksand, sans-serif;
+  font-weight: bold;
+  line-height: 9px;
+  letter-spacing: 0;
+}
+@media (max-width:1079.95px) {
+  .jss45 {
+    line-height: 20px;
+  }
+}
+.jss46 {
+  height: 65px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #F9F9FB;
+}
+@media (max-width:749.95px) {
+  .jss46 {
+    display: flex;
+    padding: 0 8px;
+    justify-content: space-around;
+  }
+}
+.jss47 {
+  color: #35323d;
+  font-size: 14px;
+  font-family: Quicksand, sans-serif;
+  font-weight: bold;
+  line-height: 15px;
+}
+@media (max-width:859.95px) {
+  .jss47 {
+    overflow: hidden;
+    font-size: 11px;
+    border-left: 1px solid #E7E9EC;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+@media (min-width:860px) {
+  .jss47 {
+    word-break: break-all;
+  }
+}
+@media (max-width:859.95px) {
+  .jss48 {
+    padding: 8px 16px 8px 16px;
+  }
+}
+@media (max-width:859.95px) {
+  .jss49 {
+    padding: 8px 16px 8px 16px;
+    line-height: 13px;
+  }
+}
+.jss50 {
+  color: #9ca1ab !important;
+  font-size: 14px;
+  font-family: Quicksand, sans-serif;
+  font-weight: bold;
+  line-height: 15px;
+}
+@media (max-width:859.95px) {
+  .jss50 {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+}
+.jss51 {
+  margin: 30px 0;
+  min-width: 1157px;
+}
+@media (max-width:1279.95px) {
+  .jss51 {
+    min-width: 100%;
+  }
+}
+.jss52 {
+  display: grid;
+  text-align: center;
+  line-height: 15px;
+  grid-template-columns: repeat(5, 1fr);
+}
+@media (min-width:750px) and (max-width:1279.95px) {
+  .jss52 {
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width:749.95px) {
+  .jss52 {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+.jss53 {
+  color: #35323d;
+  font-size: 12px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  line-height: 15px;
+}
+@media (max-width:1279.95px) {
+  .jss53 {
+    overflow: hidden;
+    font-size: 11px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+.jss54 {
+  display: grid;
+  text-align: center;
+  line-height: 15px;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width:1279.95px) {
+  .jss54 {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+.jss55 {
+  display: grid;
+  text-align: center;
+  line-height: 15px;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width:1279.95px) {
+  .jss55 {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
+.jss56 {
+  padding: 0 20px;
+  margin-top: 30px;
+}
+@media (max-width:564.95px) {
+  .jss56 {
+    padding: 0px;
+  }
+}
+@media (min-width:750px) and (max-width:1279.95px) {
+  .jss57 {
+    width: 100%;
+  }
+}
+@media (min-width:860px) {
+  .jss57 {
+    margin-left: 50px;
+  }
+}
+.jss58 {
+  cursor: pointer;
+}
+@media (max-width:1279.95px) {
+  .jss58 {
+    width: 90%;
+  }
+}
+.jss59 {
+  padding: 20px;
+  box-shadow: 0 0 6px 0 rgba(174,182,191,0.2), 0 2px 20px 0 rgba(174,182,191,0.1);
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+@media (max-width:564.95px) {
+  .jss59 {
+    padding: 5px;
+  }
+}
+.jss60 {
+  display: flex;
+}
+@media (max-width:859.95px) {
+  .jss60 {
+    flex-direction: column;
+  }
+}
+.jss61 {
+  width: 335px;
+  height: 8px;
+  padding: 0px;
+}
+@media (max-width:1279.95px) {
+  .jss61 {
+    width: 100%;
+  }
+}
+.jss62 {
+  width: 362px;
+  height: 37px;
+  margin-top: 20px;
+}
+@media (max-width:1279.95px) {
+  .jss62 {
+    width: 95%;
+    margin-left: 15px;
+  }
+}
+.jss63 {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width:1279.95px) {
+  .jss63 {
+    align-items: flex-start;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+}
+.jss64 {
+  display: flex;
+  align-items: center;
+}
+@media (max-width:1279.95px) {
+  .jss64 {
+    margin-bottom: 10px;
+  }
+}
+.jss65 {
+  display: flex;
+  align-items: center;
+}
+@media (max-width:1279.95px) {
+  .jss65 {
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}
+.jss66 {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+@media (max-width:1279.95px) {
+  .jss66 {
+    margin-bottom: 10px;
+  }
+}
+.jss67 {
+  width: 190px !important;
+  height: 40px !important;
+}
+.jss67 div {
+  width: 190px !important;
+}
+@media (max-width:1279.95px) {
+  .jss67 {
+    width: 170px !important;
+  }
+}
+@media (max-width:1279.95px) {
+  .jss67 div {
+    width: 170px !important;
+  }
+}
+.jss68 {
+  width: 190px !important;
+}
+.jss68 div:last-child > div {
+  left: 0px !important;
+}
+@media (max-width:1279.95px) {
+  .jss68 {
+    width: 170px !important;
+  }
+}
+.jss69 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.jss69 td {
+  border-bottom: 0;
+}
+.jss70 {
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+@media (max-width:564.95px) {
+  .jss70 {
+    margin-left: 0px;
+  }
+}
+.jss71 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width:859.95px) {
+  .jss71 {
+    width: 100%;
+  }
+}
+.jss72 {
+  display: flex;
+  box-shadow: 0 3px 7px 0 rgba(115,114,132,0.3);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+@media (max-width:564.95px) {
+  .jss72 {
+    margin-bottom: 4px;
+  }
+}
+.jss73 {
+  display: none;
+}
+.jss74 {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #F3F4F6;
+}
+.jss75 {
+  color: #35323d;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 24px;
+  margin-left: 8px;
+}
+@media (max-width:564.95px) {
+  .jss75 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.jss76 g {
+  fill: #9CA3AF;
+  stroke: #9CA3AF;
+}
+@media (min-width:565px) {
+  .jss76 {
+    width: 33px;
+    height: 20px;
+  }
+}
+.jss77 g {
+  fill: #9CA3AF;
+  stroke: #9CA3AF;
+}
+@media (min-width:565px) {
+  .jss77 {
+    width: 33px;
+    height: 26px;
+  }
+}
+.jss78 g {
+  fill: #9CA3AF;
+  stroke: #9CA3AF;
+}
+@media (min-width:565px) {
+  .jss78 {
+    width: 28px;
+    height: 30px;
+  }
+}
+@media (min-width:565px) {
+  .jss79 {
+    width: 28px;
+    height: 32px;
+  }
+}
+.jss80 {
+  color: #9CA3AF;
+}
+.jss81 {
+  min-width: 20px !important;
+}
+.jss82 {
+  text-align: center;
+}
+</style><link rel="stylesheet" type="text/css" href="/static/css/2041.ff0bee89.chunk.css"><link rel="stylesheet" type="text/css" href="/static/css/Activity log open URL.5cf2814c.chunk.css"><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5QOijsaRnxoq-7Sazznc1CBGTgSdWId4&amp;libraries=places,&amp;v=3.58" defer=""></script><script defer="">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "qu4pnh9iaw");</script><script type="text/javascript">window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};   
+      heap.load(3983275263, {secureCookie: true})</script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/63/5d/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/63/5d/util.js"></script></head><body class="  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="MuiBox-root jss24" data-testid="activityLogPreview"><div class="MuiBox-root jss25"><div class="MuiGrid-root jss16 MuiGrid-item"><div class="jss17"><div class="MuiBox-root jss122 jss20" data-testid="logoHeader" cursor="pointer"><a href="https://use.rently.com/" target="_blank" rel="noopener noreferrer" data-testid="rentlyLogoHeader"><svg height="33" viewBox="0 0 399 80"><title>Logo Rently manager</title><defs><linearGradient x1="65.593%" y1="15.012%" x2="29.886%" y2="93.26%" id="prefix__a"><stop stop-color="#44A0D9" offset="0%"></stop><stop stop-color="#235589" offset="100%"></stop></linearGradient></defs><g fill-rule="nonzero" fill="none"><path d="M29.017 0L0 21.008v37.398l.003.276c.147 6.053 5.098 10.915 11.185 10.915h21.78c1.697 3.092 3.804 5.463 6.32 7.114 2.517 1.65 5.892 2.747 10.127 3.289l-.517-.673c-1.498-1.976-2.504-3.562-3.018-4.758-.572-1.329-.876-2.986-.914-4.972H46.3c6.18 0 11.189-5.01 11.189-11.19V21.007l-7.312-5.394V4.592h-9.673v3.884L29.017 0z" fill="url(#prefix__a)"></path><path d="M248.871 32.36c.69 0 1.292.241 1.803.725.51.483.766 1.084.766 1.803v23.998c0 .719-.234 1.32-.704 1.803-.47.484-1.091.726-1.865.726-.773 0-1.402-.235-1.885-.705-.484-.47-.725-1.078-.725-1.824V42.183l-6.838 10.445a3.534 3.534 0 01-.953.808c-.359.207-.732.297-1.118.27-.36.027-.719-.063-1.078-.27a3.534 3.534 0 01-.953-.808l-6.837-10.818v17.076c0 .746-.221 1.354-.663 1.824-.442.47-1.022.705-1.74.705-.691 0-1.257-.242-1.7-.726-.441-.483-.662-1.084-.662-1.803V34.888c0-.69.255-1.285.766-1.782a2.549 2.549 0 011.844-.746c.415 0 .829.103 1.243.31.415.208.732.477.953.809l9.034 13.885 9.282-13.885a2.52 2.52 0 01.89-.809c.374-.207.753-.31 1.14-.31zm26.313 6.465c.718 0 1.312.235 1.782.705s.704 1.078.704 1.824v17.532c0 .719-.235 1.32-.704 1.803-.47.484-1.064.726-1.782.726s-1.305-.235-1.761-.705c-.456-.47-.698-1.064-.725-1.782-.69.801-1.623 1.485-2.797 2.051a8.43 8.43 0 01-3.709.85c-1.906 0-3.633-.49-5.18-1.471-1.547-.981-2.769-2.342-3.667-4.083-.898-1.74-1.347-3.716-1.347-5.927 0-2.21.442-4.193 1.326-5.948.884-1.754 2.093-3.122 3.626-4.103 1.533-.981 3.225-1.472 5.076-1.472 1.326 0 2.57.242 3.73.726 1.16.483 2.14 1.098 2.942 1.844v-.041c0-.719.235-1.32.704-1.803.47-.484 1.064-.726 1.782-.726zm-8.37 18.445c1.795 0 3.26-.656 4.392-1.969 1.133-1.312 1.699-2.963 1.699-4.953 0-1.99-.566-3.647-1.699-4.974-1.133-1.326-2.597-1.99-4.392-1.99-1.768 0-3.219.664-4.351 1.99-1.133 1.327-1.7 2.984-1.7 4.974 0 1.99.56 3.64 1.679 4.953 1.119 1.313 2.576 1.969 4.372 1.969zm28.094-18.445c2.818 0 4.766.836 5.843 2.508 1.077 1.672 1.616 3.986 1.616 6.943v10.61c0 .719-.235 1.32-.704 1.803-.47.484-1.064.726-1.782.726s-1.312-.242-1.782-.726c-.47-.483-.704-1.084-.704-1.803v-10.61c0-1.52-.318-2.715-.953-3.586-.636-.87-1.727-1.305-3.274-1.305-1.602 0-2.86.463-3.77 1.388-.912.926-1.368 2.093-1.368 3.503v10.61c0 .719-.235 1.32-.705 1.803-.47.484-1.063.726-1.782.726-.718 0-1.312-.242-1.781-.726-.47-.483-.705-1.084-.705-1.803V41.768c0-.718.235-1.32.705-1.803.47-.483 1.063-.725 1.781-.725.719 0 1.313.242 1.782.725.47.484.705 1.085.705 1.803v.705c.746-.995 1.72-1.851 2.921-2.57a7.569 7.569 0 013.957-1.078zm30.788 0c.719 0 1.313.235 1.782.705.47.47.705 1.078.705 1.824v17.532c0 .719-.235 1.32-.705 1.803-.47.484-1.063.726-1.782.726-.718 0-1.305-.235-1.76-.705-.456-.47-.698-1.064-.726-1.782-.69.801-1.623 1.485-2.797 2.051a8.43 8.43 0 01-3.708.85c-1.907 0-3.633-.49-5.18-1.471-1.547-.981-2.77-2.342-3.667-4.083-.898-1.74-1.347-3.716-1.347-5.927 0-2.21.442-4.193 1.326-5.948.884-1.754 2.092-3.122 3.626-4.103 1.533-.981 3.225-1.472 5.076-1.472 1.326 0 2.569.242 3.73.726 1.16.483 2.14 1.098 2.941 1.844v-.041c0-.719.235-1.32.705-1.803.47-.484 1.063-.726 1.781-.726zm-8.37 18.445c1.796 0 3.26-.656 4.392-1.969 1.133-1.312 1.7-2.963 1.7-4.953 0-1.99-.567-3.647-1.7-4.974-1.132-1.326-2.596-1.99-4.392-1.99-1.768 0-3.218.664-4.35 1.99-1.134 1.327-1.7 2.984-1.7 4.974 0 1.99.56 3.64 1.678 4.953 1.12 1.313 2.576 1.969 4.372 1.969zm34.6-18.445c.719 0 1.313.235 1.782.705.47.47.705 1.078.705 1.824v18.444c0 3.371-1.043 5.865-3.129 7.482-2.086 1.616-4.73 2.424-7.935 2.424-.829 0-1.968-.138-3.419-.414l-.596-.119c-1.14-.236-1.97-.473-2.49-.71-1.354-.58-2.031-1.382-2.031-2.404 0-.155.026-.327.08-.517l.044-.146c.166-.608.449-1.071.85-1.389.4-.318.835-.476 1.305-.476.207 0 .406.023.598.07l.252.073c.216.072.88.321 1.988.748 1.257.483 2.397.725 3.419.725 2.044 0 3.57-.408 4.579-1.223 1.008-.815 1.512-1.969 1.512-3.46v-1.99c-.608.856-1.526 1.63-2.755 2.32a7.949 7.949 0 01-3.958 1.037c-1.933 0-3.695-.49-5.283-1.471-1.588-.981-2.838-2.342-3.75-4.083-.912-1.74-1.368-3.716-1.368-5.927 0-2.21.45-4.193 1.347-5.948.898-1.754 2.127-3.122 3.688-4.103 1.561-.981 3.294-1.472 5.2-1.472 1.41 0 2.722.29 3.937.87 1.216.581 2.196 1.286 2.942 2.115v-.456c0-.719.235-1.32.705-1.803.47-.484 1.063-.726 1.781-.726zM343.35 57.27c1.85 0 3.363-.656 4.537-1.969 1.174-1.312 1.761-2.963 1.761-4.953 0-1.99-.587-3.647-1.76-4.974-1.175-1.326-2.687-1.99-4.538-1.99-1.851 0-3.357.664-4.517 1.99-1.16 1.327-1.74 2.984-1.74 4.974 0 1.99.58 3.64 1.74 4.953 1.16 1.313 2.666 1.969 4.517 1.969zm36.34-7.46c-.027.662-.29 1.201-.787 1.616a2.636 2.636 0 01-1.74.621h-13.674c.331 1.63 1.09 2.909 2.279 3.834 1.187.926 2.527 1.389 4.019 1.389 1.133 0 2.017-.104 2.652-.311.635-.207 1.14-.428 1.513-.663l.709-.442.057-.035c.497-.249.967-.373 1.409-.373.58 0 1.077.207 1.492.622.414.414.621.898.621 1.45 0 .747-.386 1.424-1.16 2.031-.773.636-1.81 1.175-3.108 1.617a12.14 12.14 0 01-3.936.663c-2.32 0-4.344-.483-6.07-1.45-1.728-.968-3.06-2.3-4-4-.939-1.7-1.409-3.613-1.409-5.74 0-2.377.498-4.463 1.492-6.26.995-1.796 2.307-3.17 3.937-4.124 1.63-.953 3.37-1.43 5.22-1.43 1.824 0 3.544.498 5.16 1.493 1.616.994 2.907 2.334 3.874 4.02a10.81 10.81 0 011.45 5.471zm-10.483-6.425c-3.205 0-5.097 1.506-5.677 4.518h10.857v-.29c-.11-1.161-.677-2.156-1.7-2.985-1.021-.829-2.182-1.243-3.48-1.243zm26.147-4.56c.829 0 1.526.235 2.093.705.566.47.85 1.022.85 1.658 0 .857-.222 1.499-.664 1.927a2.186 2.186 0 01-1.575.643c-.355 0-.75-.071-1.187-.213l-.221-.077c-.083-.028-.27-.083-.56-.166a3.38 3.38 0 00-.932-.125c-.718 0-1.409.222-2.072.664-.663.442-1.209 1.112-1.637 2.01-.428.898-.642 1.969-.642 3.212v9.823c0 .719-.235 1.32-.705 1.803-.47.484-1.063.726-1.781.726-.719 0-1.313-.242-1.782-.726-.47-.483-.705-1.084-.705-1.803V41.768c0-.718.235-1.32.705-1.803.47-.483 1.063-.725 1.782-.725.718 0 1.312.242 1.781.725.47.484.705 1.085.705 1.803v.54c.635-1.134 1.547-1.997 2.735-2.591a8.406 8.406 0 013.812-.892z" fill="#177BB5"></path><path d="M195.42 32.264v16.534a7.005 7.005 0 0014.005.173l.002-.173V32.264h6.164V62.25c0 8.512-6.899 15.413-15.41 15.413-5.645 0-10.581-3.037-13.265-7.567l4.275-3.263c.047-.035.196-.188.52-.16.215.018.373.093.475.223a9.241 9.241 0 007.996 4.602c4.986 0 9.05-3.948 9.239-8.89l.005-.178.001-.18v-2.296a13.104 13.104 0 01-7.004 2.016c-7.272 0-13.168-5.897-13.168-13.172V32.264h6.164zM65.421 20.494H80.55c6.808 0 12.327 5.52 12.327 12.33 0 5.284-3.321 9.79-7.99 11.546l-.28.102 8.277 14.342-5.338 3.082-9.663-16.74h-6.3l.001 15.693h-6.163V20.494H80.55zm42.585 10.65c7.015 0 12.72 5.605 12.884 12.582l.004.308v5.045h-6.162l-.002-.013h-13.765a7.789 7.789 0 007.245 6.482l.253.01.18.001h.733c.349 0 .697-.033 1.039-.1 1.226-.237 2.705-.9 3.659-1.782.436-.422 1.14-.407 1.518-.122l3.93 3c-1.732 2.757-4.984 4.833-8.466 4.953l-.317.005h-2.733c-7.016 0-12.723-6.253-12.884-13.25l-.004-.305v-3.924c0-7.12 5.77-12.89 12.888-12.89zm58.275-5.605v6.725h6.724v6.166h-6.724v22.419h-6.164v-22.42h-6.724v-6.165h6.724V25.54h6.164zm-28.577 5.604c7.117 0 12.887 5.772 12.887 12.891V60.85h-6.163V43.474a6.725 6.725 0 00-13.446-.171l-.002.17V60.85h-6.164V32.264h6.164v.77a12.825 12.825 0 016.724-1.89zm47.068-10.649V60.85h-6.164V20.494h6.164zm-76.587 16.498h-.802a6.774 6.774 0 00-6.77 6.536l-.003.238h14.349l-.005-.238a6.774 6.774 0 00-6.77-6.536zM79.99 26.099h-8.405v13.452h8.405a6.725 6.725 0 006.724-6.726 6.725 6.725 0 00-6.724-6.726z" fill="#000"></path></g></svg></a></div><div class="jss18">Don't have an account?<u role="button" class="jss19">Get Started</u></div></div></div></div><div class="MuiBox-root jss27" style="padding: 20px;"><div class="MuiBox-root jss28"><div class="MuiBox-root jss83 ActivityLogDialog_notFound__ndsSz" data-testid="notFoundSVG"><div class="MuiBox-root jss119" data-testid="notFound"><svg width="373" height="206"><defs><path d="M100.989 205.226c43.17-2.382 77.812-22.026 77.812-55.813 0-24.518-33.582-35.548-41.814-50.55-19.688-35.878 12.566-44.672-4.682-77.468C122.903 3.518 104.775.443 90.311.443c-18.997 0-38.436 9.704-53.612 25.817C8.577 56.116-3.336 94.502 1.002 128.5c4.337 33.999 33.467 80.394 99.987 76.725z" id="prefix__a"></path><path d="M89.916 11.937c9.8-10.282 20.7-14.136 32.858-10.674 7.617 2.168 14.447 7.847 17.568 13.24 3.12 5.393 3.674 15.304.86 18.354-7.347 7.96-17.962-3.896-23.804 6.108-5.841 10.004-1.08 26.317-5.382 41.06-4.302 14.742-16.23 23.046-17.957 25.04-1.726 1.993 10.202 24.927-7.344 33.084-17.547 8.157-31.454-11.847-31.454-11.847s-17.66 4.195-26.791 8.364c-9.13 4.168-18.704 3.508-23.752-4.088-5.048-7.596-4.373-18.705-3.325-24.759.665-3.84 5.575-24.489 10.211-33.301 2.668-5.072 7.566-10.016 14.693-14.833L49.904 35.52c15.877 14.95 23.986 22.338 24.33 22.166.515-.258 4.148-33.649 15.682-45.748z" id="prefix__c"></path><path d="M.706 9.618c.93-2.208 5.21-7.098 8.368-8.175C12.232.365 18.4-.311 22.22 2.52c3.82 2.83 5.654 5.235 6.268 6.615.615 1.38 1.293 5.834-3.17 5.834-4.461 0-6.94-1.057-10.14-1.057S8.545 14.97 7.746 14.97c-.799 0-4.871.726-6.12-.404-1.249-1.129-1.85-2.739-.92-4.947z" id="prefix__e"></path></defs><g fill="none" fill-rule="evenodd"><g transform="translate(90.03)"><mask id="prefix__b" fill="#fff"><use xlink:href="#prefix__a"></use></mask><use fill="#EDF4FF" xlink:href="#prefix__a"></use><g mask="url(#prefix__b)" fill="#DFEDFF"><g transform="translate(-14.191 97.839)"><path d="M0 49.768h197.065v48.924H0z"></path><path d="M21.766 9.346a.847.847 0 011.266-.732l12.124 6.922c.263.15.425.43.425.732v39.21a.845.845 0 01-.845.844H22.612a.845.845 0 01-.846-.843V9.346z"></path><rect x="49.067" width="6.959" height="54.705" rx="1"></rect><rect x="54.68" y="15.183" width="9.557" height="39.521" rx="1"></rect><rect x="41.104" y="24.941" width="24.533" height="30.607" rx="1"></rect><path d="M131.94 8.571a.847.847 0 011.266-.732l12.124 6.922c.264.15.426.43.426.732v39.212a.845.845 0 01-.846.843h-12.124a.845.845 0 01-.846-.843V8.57z"></path><rect x="159.005" y="16.027" width="9.557" height="39.521" rx="1"></rect></g></g><path d="M22.468 196.84c-2.698-2.516-12.95-14.086-4.117-16.495 46.411-12.662 123.517-28.463 174.329-16.885 5.496 1.252 2.038 7.52 0 9.85-27.835 31.802-71.758 43.572-108.923 41.573-37.165-2-54.547-11.758-61.289-18.043z" fill="#D4E6FE" mask="url(#prefix__b)"></path></g><path d="M299.35 109.56c18.75 0 30.081-26 27.91-47.027-2.17-21.026-18.453-39.296-39.15-39.296-20.699 0-34.05 25.632-30.782 46.326 3.267 20.695 23.274 39.997 42.023 39.997zM18.554 103.498c-9.127 0-16.785 9.084-18.086 18.393-1.3 9.308 1.794 18.434 13.317 22.857 11.523 4.423 21.593-4.103 23.551-13.421 1.959-9.32-9.654-27.829-18.782-27.829zM361.438 115.836c-8.019-.926-12.09 5.302-12.368 10.284-.278 4.982 4.155 11.214 11.015 12.278s11.597-5.145 12.217-10.165c.62-5.02-2.845-11.471-10.864-12.397zM71.393 38.605c-2.939-4.275-9.528-4.92-14.172-2.516-4.644 2.405-7.79 6.809-6.087 13.638 1.703 6.83 8.815 8.785 13.676 6.685 4.86-2.1 9.522-13.532 6.583-17.807zM297.12 158.668c2.357 2.86 7.087 2.91 10.243.908 3.156-2 5.12-5.33 3.483-10.085-1.637-4.755-6.821-5.704-10.15-3.907-3.328 1.797-5.935 10.225-3.577 13.084z" fill="#EDF4FF"></path><g transform="translate(138.045 52.555)"><mask id="prefix__d" fill="#fff"><use xlink:href="#prefix__c"></use></mask><use fill="#D0571A" xlink:href="#prefix__c"></use><path d="M139.713 38.96c5.252-8.552-2.464-23.118-14.24-23.118-11.777 0-19.55 5.578-21.595 15.053-2.044 9.475 1.209 18.16 2.852 27.74 1.644 9.58 4.755 21.24-8.764 39.922-9.012 12.454-3.082 9.283 17.792-9.512 12.468-27.689 20.453-44.383 23.955-50.085z" fill="#F26A26" mask="url(#prefix__d)"></path></g><path d="M218.171 194.271c2.994 0 8.918-1.312 8.918-4.306 0-2.994-3.756-4.87-9.41-4.87-5.656 0-10.876 3.121-10.876 6.115s8.374 3.061 11.368 3.061zM152.573 191.098c2.965.417 11.156 1.096 11.156-2.454 0-3.549-6.626-5.577-9.815-5.577-3.19 0-8.462 1.893-8.462 4.66 0 2.767 4.156 2.955 7.121 3.371z" fill="#AA4714"></path><path d="M158.285 59c-4.525-6.477-7.066-11.272-7.623-14.386-.834-4.672-.407-10.15.331-13.416 1.154-5.102 3.221-9.994 4.154-10.2.957-.212 4.587 4.674 7.856 9.112 1.961 2.663 3.456 5.343 4.106 7.43.67 2.155 1.185 5.78 1.545 10.878l-10.37 10.583zM208.062 59.858c4.835-6.159 7.738-10.577 8.71-13.256 1.459-4.018 1.7-9.544.996-13.246-.703-3.701-2.174-10.542-3.433-10.743-1.259-.2-5.505 3.403-8.775 7.842-1.961 2.662-4.16 6.962-4.815 9.484-.699 2.693-.699 6.019 0 9.978l7.317 9.94z" fill="#D0571A"></path><path d="M185.577 41.577c6.11 0 13.315 1.973 19.918 5.726 5.013 2.85 13.14 11.398 16.369 21.922 3.793 12.363 9.784 23.229 7.258 36.885-2.086 11.281-11.457 25.891-25.076 33.882-13.62 7.99-23.648 6.146-35.673 0-12.026-6.147-23.414-18.382-27.405-32.581-3.99-14.199.416-24.44 4.679-34.247 4.262-9.807 8.073-18.699 14.16-23.374 6.086-4.675 15.023-8.213 25.77-8.213z" fill="#F26A26"></path><path d="M158.088 181.432c6.599 6.03 18.006 7.429 27.322 7.429 9.315 0 18.39-3.44 21.32-5.628 1.954-1.459 1.954-6.183 0-14.175l-27.014-2.708c-18.818 6.035-26.027 11.062-21.628 15.082z" fill="#D0571A"></path><path d="M204.121 67.028c4.618 0 8.397 3.664 8.525 8.265l.388 14.007c.14 5.035-3.841 9.23-8.893 9.37a9.178 9.178 0 01-.253.003c-4.98 0-9.016-4.024-9.016-8.988 0-.127.003-.253.008-.38l.595-14.016c.196-4.618 4.01-8.261 8.646-8.261z" fill="#FFF" fill-rule="nonzero"></path><path d="M208.45 81.095a3.521 3.521 0 00-3.386 3.513 3.522 3.522 0 003.527 3.517c1.901 0 3.451-1.5 3.525-3.376a9.311 9.311 0 011.179 4.548c0 5.178-4.212 9.376-9.407 9.376s-9.406-4.198-9.406-9.376c0-5.179 4.211-9.377 9.406-9.377 1.656 0 3.211.426 4.563 1.175z" fill="#35323D"></path><path d="M166.417 68.018c4.67 0 8.492 3.704 8.623 8.357l.365 12.925c.142 5.033-3.835 9.228-8.884 9.37a9.174 9.174 0 01-.257.003c-5 0-9.055-4.04-9.055-9.026 0-.114.003-.229.007-.344l.495-12.931c.178-4.664 4.024-8.354 8.706-8.354z" fill="#FFF" fill-rule="nonzero"></path><path d="M170.826 81.095a3.521 3.521 0 00-3.387 3.513 3.522 3.522 0 003.528 3.517c1.9 0 3.45-1.5 3.524-3.376a9.311 9.311 0 011.179 4.548c0 5.178-4.211 9.376-9.406 9.376s-9.407-4.198-9.407-9.376c0-5.179 4.212-9.377 9.407-9.377 1.655 0 3.21.426 4.562 1.175zM180.002 102.404c0 1.114 1.874 5.639 5.514 5.639 3.641 0 5.243-4.484 5.243-5.639 0-.609-2.55-2.32-5.378-2.282-2.534.034-5.379 1.756-5.379 2.282z" fill="#35323D"></path><g transform="translate(170.558 117.426)"><mask id="prefix__f" fill="#fff"><use xlink:href="#prefix__e"></use></mask><use fill="#35323D" xlink:href="#prefix__e"></use><path d="M8.079 1.665c1.393 3.228 2.783 5.543 6.672 5.543 2.593 0 4.808-1.848 6.646-5.543-.804-1.343-1.624-2.09-2.46-2.243-6.903-1.261-11.644.421-10.858 2.243z" fill="#FFF" mask="url(#prefix__f)"></path></g><path d="M173.45 175.994l-4.77.67.865 6.15-6.61.93-.865-6.151-15.773 2.217-.641-4.56 11.196-20.517 7.112-1-10.327 19.413 7.866-1.105-.77-5.481 6.401-.9.77 5.481 4.77-.67.776 5.523zm14.654 4.606c-2.426.34-4.672.045-6.737-.888-2.066-.933-3.795-2.46-5.188-4.583-1.394-2.122-2.312-4.759-2.755-7.91-.443-3.153-.287-5.94.467-8.365.755-2.424 1.996-4.369 3.724-5.835 1.728-1.466 3.806-2.37 6.232-2.71 2.427-.341 4.673-.046 6.738.887 2.065.933 3.795 2.46 5.188 4.583 1.393 2.122 2.311 4.76 2.754 7.911.443 3.152.288 5.94-.467 8.364-.754 2.424-1.995 4.37-3.723 5.835-1.729 1.466-3.806 2.37-6.233 2.71zm-.805-5.732c1.785-.251 3.079-1.215 3.881-2.892.803-1.677.978-4.12.528-7.327-.451-3.208-1.293-5.507-2.527-6.898-1.234-1.391-2.743-1.961-4.528-1.71-1.757.246-3.037 1.208-3.84 2.886-.802 1.677-.978 4.12-.527 7.327.45 3.207 1.293 5.507 2.526 6.898 1.234 1.39 2.73 1.963 4.487 1.716zm40.865-6.078l-4.77.67.865 6.15-6.61.93-.865-6.15-15.773 2.216-.641-4.56 11.196-20.517 7.112-1-10.327 19.414 7.866-1.106-.77-5.48 6.4-.9.771 5.48 4.77-.67.776 5.523z" fill="#FFF"></path><path d="M140.314 137.444c-.472-4.115-.323-8.924 2.051-11.449 2.374-2.525 6.653-2.842 9.38-.003 2.726 2.84 4.487 10.12 7.531 13.144 3.044 3.024 7.713 8.519 6.665 11.965-1.047 3.446-3.928 4.267-8.202 4.337-4.274.07-10.26-4.034-12.96-7.6-2.699-3.564-3.993-6.279-4.465-10.394zM216.44 132.361c1.316-3.764 3.44-9.476 8.306-10.74 4.867-1.264 7.335 2.627 8.271 6.977.937 4.35-1.543 10.1-4.367 14.138s-6.865 7.659-12.199 8.425c-5.333.766-8.027-1.343-8.453-3.585-.427-2.242.693-5.5 2.855-7.913 2.163-2.412 4.271-3.538 5.587-7.302z" fill="#AA4714"></path><g><path d="M210.66 97.5s-1.297 7.238-3.917 10.454-1.821 7.58 0 9.76c1.82 2.179 5.652 2.248 8.169 0 2.516-2.25 1.554-7.11.905-8.737-.648-1.627-1.739-2.836-2.937-5.19-1.379-2.709-2.22-6.286-2.22-6.286z" fill="#B8D4F9"></path><path d="M215.025 111.947c.171.686.556 2.495-.335 4.137-.892 1.643-2.571 1.573-2.571 0 0-.862.533-1.28.904-2.68.405-1.534-.018-5.637.482-5.34.5.299 1.35 3.197 1.52 3.883z" fill="#FFF"></path></g></g></svg><div class="MuiBox-root jss120">Page is not available now</div><div class="MuiBox-root jss121">The link you followed may be broken, or the page may have been removed.</div></div></div></div><div class="MuiGrid-root jss89 jss103 MuiGrid-item" data-testid="globalFooter"><div class="jss90"><a class="MuiBox-root jss104 jss91" data-testid="rentlyLogoFooter" cursor="pointer" href="https://use.rently.com" target="_blank"><svg height="33" viewBox="0 0 399 80" class="jss92"><title>Logo Rently manager</title><defs><linearGradient x1="65.593%" y1="15.012%" x2="29.886%" y2="93.26%" id="prefix__a"><stop stop-color="#44A0D9" offset="0%"></stop><stop stop-color="#235589" offset="100%"></stop></linearGradient></defs><g fill-rule="nonzero" fill="none"><path d="M29.017 0L0 21.008v37.398l.003.276c.147 6.053 5.098 10.915 11.185 10.915h21.78c1.697 3.092 3.804 5.463 6.32 7.114 2.517 1.65 5.892 2.747 10.127 3.289l-.517-.673c-1.498-1.976-2.504-3.562-3.018-4.758-.572-1.329-.876-2.986-.914-4.972H46.3c6.18 0 11.189-5.01 11.189-11.19V21.007l-7.312-5.394V4.592h-9.673v3.884L29.017 0z" fill="url(#prefix__a)"></path><path d="M248.871 32.36c.69 0 1.292.241 1.803.725.51.483.766 1.084.766 1.803v23.998c0 .719-.234 1.32-.704 1.803-.47.484-1.091.726-1.865.726-.773 0-1.402-.235-1.885-.705-.484-.47-.725-1.078-.725-1.824V42.183l-6.838 10.445a3.534 3.534 0 01-.953.808c-.359.207-.732.297-1.118.27-.36.027-.719-.063-1.078-.27a3.534 3.534 0 01-.953-.808l-6.837-10.818v17.076c0 .746-.221 1.354-.663 1.824-.442.47-1.022.705-1.74.705-.691 0-1.257-.242-1.7-.726-.441-.483-.662-1.084-.662-1.803V34.888c0-.69.255-1.285.766-1.782a2.549 2.549 0 011.844-.746c.415 0 .829.103 1.243.31.415.208.732.477.953.809l9.034 13.885 9.282-13.885a2.52 2.52 0 01.89-.809c.374-.207.753-.31 1.14-.31zm26.313 6.465c.718 0 1.312.235 1.782.705s.704 1.078.704 1.824v17.532c0 .719-.235 1.32-.704 1.803-.47.484-1.064.726-1.782.726s-1.305-.235-1.761-.705c-.456-.47-.698-1.064-.725-1.782-.69.801-1.623 1.485-2.797 2.051a8.43 8.43 0 01-3.709.85c-1.906 0-3.633-.49-5.18-1.471-1.547-.981-2.769-2.342-3.667-4.083-.898-1.74-1.347-3.716-1.347-5.927 0-2.21.442-4.193 1.326-5.948.884-1.754 2.093-3.122 3.626-4.103 1.533-.981 3.225-1.472 5.076-1.472 1.326 0 2.57.242 3.73.726 1.16.483 2.14 1.098 2.942 1.844v-.041c0-.719.235-1.32.704-1.803.47-.484 1.064-.726 1.782-.726zm-8.37 18.445c1.795 0 3.26-.656 4.392-1.969 1.133-1.312 1.699-2.963 1.699-4.953 0-1.99-.566-3.647-1.699-4.974-1.133-1.326-2.597-1.99-4.392-1.99-1.768 0-3.219.664-4.351 1.99-1.133 1.327-1.7 2.984-1.7 4.974 0 1.99.56 3.64 1.679 4.953 1.119 1.313 2.576 1.969 4.372 1.969zm28.094-18.445c2.818 0 4.766.836 5.843 2.508 1.077 1.672 1.616 3.986 1.616 6.943v10.61c0 .719-.235 1.32-.704 1.803-.47.484-1.064.726-1.782.726s-1.312-.242-1.782-.726c-.47-.483-.704-1.084-.704-1.803v-10.61c0-1.52-.318-2.715-.953-3.586-.636-.87-1.727-1.305-3.274-1.305-1.602 0-2.86.463-3.77 1.388-.912.926-1.368 2.093-1.368 3.503v10.61c0 .719-.235 1.32-.705 1.803-.47.484-1.063.726-1.782.726-.718 0-1.312-.242-1.781-.726-.47-.483-.705-1.084-.705-1.803V41.768c0-.718.235-1.32.705-1.803.47-.483 1.063-.725 1.781-.725.719 0 1.313.242 1.782.725.47.484.705 1.085.705 1.803v.705c.746-.995 1.72-1.851 2.921-2.57a7.569 7.569 0 013.957-1.078zm30.788 0c.719 0 1.313.235 1.782.705.47.47.705 1.078.705 1.824v17.532c0 .719-.235 1.32-.705 1.803-.47.484-1.063.726-1.782.726-.718 0-1.305-.235-1.76-.705-.456-.47-.698-1.064-.726-1.782-.69.801-1.623 1.485-2.797 2.051a8.43 8.43 0 01-3.708.85c-1.907 0-3.633-.49-5.18-1.471-1.547-.981-2.77-2.342-3.667-4.083-.898-1.74-1.347-3.716-1.347-5.927 0-2.21.442-4.193 1.326-5.948.884-1.754 2.092-3.122 3.626-4.103 1.533-.981 3.225-1.472 5.076-1.472 1.326 0 2.569.242 3.73.726 1.16.483 2.14 1.098 2.941 1.844v-.041c0-.719.235-1.32.705-1.803.47-.484 1.063-.726 1.781-.726zm-8.37 18.445c1.796 0 3.26-.656 4.392-1.969 1.133-1.312 1.7-2.963 1.7-4.953 0-1.99-.567-3.647-1.7-4.974-1.132-1.326-2.596-1.99-4.392-1.99-1.768 0-3.218.664-4.35 1.99-1.134 1.327-1.7 2.984-1.7 4.974 0 1.99.56 3.64 1.678 4.953 1.12 1.313 2.576 1.969 4.372 1.969zm34.6-18.445c.719 0 1.313.235 1.782.705.47.47.705 1.078.705 1.824v18.444c0 3.371-1.043 5.865-3.129 7.482-2.086 1.616-4.73 2.424-7.935 2.424-.829 0-1.968-.138-3.419-.414l-.596-.119c-1.14-.236-1.97-.473-2.49-.71-1.354-.58-2.031-1.382-2.031-2.404 0-.155.026-.327.08-.517l.044-.146c.166-.608.449-1.071.85-1.389.4-.318.835-.476 1.305-.476.207 0 .406.023.598.07l.252.073c.216.072.88.321 1.988.748 1.257.483 2.397.725 3.419.725 2.044 0 3.57-.408 4.579-1.223 1.008-.815 1.512-1.969 1.512-3.46v-1.99c-.608.856-1.526 1.63-2.755 2.32a7.949 7.949 0 01-3.958 1.037c-1.933 0-3.695-.49-5.283-1.471-1.588-.981-2.838-2.342-3.75-4.083-.912-1.74-1.368-3.716-1.368-5.927 0-2.21.45-4.193 1.347-5.948.898-1.754 2.127-3.122 3.688-4.103 1.561-.981 3.294-1.472 5.2-1.472 1.41 0 2.722.29 3.937.87 1.216.581 2.196 1.286 2.942 2.115v-.456c0-.719.235-1.32.705-1.803.47-.484 1.063-.726 1.781-.726zM343.35 57.27c1.85 0 3.363-.656 4.537-1.969 1.174-1.312 1.761-2.963 1.761-4.953 0-1.99-.587-3.647-1.76-4.974-1.175-1.326-2.687-1.99-4.538-1.99-1.851 0-3.357.664-4.517 1.99-1.16 1.327-1.74 2.984-1.74 4.974 0 1.99.58 3.64 1.74 4.953 1.16 1.313 2.666 1.969 4.517 1.969zm36.34-7.46c-.027.662-.29 1.201-.787 1.616a2.636 2.636 0 01-1.74.621h-13.674c.331 1.63 1.09 2.909 2.279 3.834 1.187.926 2.527 1.389 4.019 1.389 1.133 0 2.017-.104 2.652-.311.635-.207 1.14-.428 1.513-.663l.709-.442.057-.035c.497-.249.967-.373 1.409-.373.58 0 1.077.207 1.492.622.414.414.621.898.621 1.45 0 .747-.386 1.424-1.16 2.031-.773.636-1.81 1.175-3.108 1.617a12.14 12.14 0 01-3.936.663c-2.32 0-4.344-.483-6.07-1.45-1.728-.968-3.06-2.3-4-4-.939-1.7-1.409-3.613-1.409-5.74 0-2.377.498-4.463 1.492-6.26.995-1.796 2.307-3.17 3.937-4.124 1.63-.953 3.37-1.43 5.22-1.43 1.824 0 3.544.498 5.16 1.493 1.616.994 2.907 2.334 3.874 4.02a10.81 10.81 0 011.45 5.471zm-10.483-6.425c-3.205 0-5.097 1.506-5.677 4.518h10.857v-.29c-.11-1.161-.677-2.156-1.7-2.985-1.021-.829-2.182-1.243-3.48-1.243zm26.147-4.56c.829 0 1.526.235 2.093.705.566.47.85 1.022.85 1.658 0 .857-.222 1.499-.664 1.927a2.186 2.186 0 01-1.575.643c-.355 0-.75-.071-1.187-.213l-.221-.077c-.083-.028-.27-.083-.56-.166a3.38 3.38 0 00-.932-.125c-.718 0-1.409.222-2.072.664-.663.442-1.209 1.112-1.637 2.01-.428.898-.642 1.969-.642 3.212v9.823c0 .719-.235 1.32-.705 1.803-.47.484-1.063.726-1.781.726-.719 0-1.313-.242-1.782-.726-.47-.483-.705-1.084-.705-1.803V41.768c0-.718.235-1.32.705-1.803.47-.483 1.063-.725 1.782-.725.718 0 1.312.242 1.781.725.47.484.705 1.085.705 1.803v.54c.635-1.134 1.547-1.997 2.735-2.591a8.406 8.406 0 013.812-.892z" fill="#177BB5"></path><path d="M195.42 32.264v16.534a7.005 7.005 0 0014.005.173l.002-.173V32.264h6.164V62.25c0 8.512-6.899 15.413-15.41 15.413-5.645 0-10.581-3.037-13.265-7.567l4.275-3.263c.047-.035.196-.188.52-.16.215.018.373.093.475.223a9.241 9.241 0 007.996 4.602c4.986 0 9.05-3.948 9.239-8.89l.005-.178.001-.18v-2.296a13.104 13.104 0 01-7.004 2.016c-7.272 0-13.168-5.897-13.168-13.172V32.264h6.164zM65.421 20.494H80.55c6.808 0 12.327 5.52 12.327 12.33 0 5.284-3.321 9.79-7.99 11.546l-.28.102 8.277 14.342-5.338 3.082-9.663-16.74h-6.3l.001 15.693h-6.163V20.494H80.55zm42.585 10.65c7.015 0 12.72 5.605 12.884 12.582l.004.308v5.045h-6.162l-.002-.013h-13.765a7.789 7.789 0 007.245 6.482l.253.01.18.001h.733c.349 0 .697-.033 1.039-.1 1.226-.237 2.705-.9 3.659-1.782.436-.422 1.14-.407 1.518-.122l3.93 3c-1.732 2.757-4.984 4.833-8.466 4.953l-.317.005h-2.733c-7.016 0-12.723-6.253-12.884-13.25l-.004-.305v-3.924c0-7.12 5.77-12.89 12.888-12.89zm58.275-5.605v6.725h6.724v6.166h-6.724v22.419h-6.164v-22.42h-6.724v-6.165h6.724V25.54h6.164zm-28.577 5.604c7.117 0 12.887 5.772 12.887 12.891V60.85h-6.163V43.474a6.725 6.725 0 00-13.446-.171l-.002.17V60.85h-6.164V32.264h6.164v.77a12.825 12.825 0 016.724-1.89zm47.068-10.649V60.85h-6.164V20.494h6.164zm-76.587 16.498h-.802a6.774 6.774 0 00-6.77 6.536l-.003.238h14.349l-.005-.238a6.774 6.774 0 00-6.77-6.536zM79.99 26.099h-8.405v13.452h8.405a6.725 6.725 0 006.724-6.726 6.725 6.725 0 00-6.724-6.726z" fill="#000"></path></g></svg></a><div class="jss93"><div class="jss94"><div class="jss95"><div class="jss96"><a class="MuiBox-root jss105" href="https://x3dd2gzx5np.typeform.com/to/EXBtgZpN" target="_blank">Manager Support</a></div><div class="jss96"><a class="MuiBox-root jss106" href="https://use.rently.com/blog/" target="_blank">Blog</a></div></div><div class="jss95"><div class="jss97"><div class="jss96"><a class="MuiBox-root jss112" href="https://use.rently.com/about-us/testimonials/" target="_blank">Testimonials</a></div><div class="jss96"><a class="MuiBox-root jss113" href="https://use.rently.com/single-family/" target="_blank">Self Showing</a></div></div></div><div class="jss95"><div class="jss96"><a class="MuiBox-root jss114" href="https://use.rently.com/manager/keyless/" target="_blank">Rently Smart Home</a></div><div class="jss96"><a class="MuiBox-root jss115" href="https://use.rently.com/manager/screening/" target="_blank">Screening</a></div></div><div class="jss95"><div class="jss96"><a class="MuiBox-root jss116" href="https://use.rently.com/manager/call-center/" target="_blank">Call Center</a></div></div></div><div class="jss99"><a class="MuiBox-root jss107" data-testid="facebook" href="https://www.facebook.com/rentlysolutions" target="_blank"><svg width="8" height="14" viewBox="0 0 8 14" class="jss100"><title>icon facebook white</title><path d="M7.284.003L5.47 0C3.429 0 2.11 1.352 2.11 3.445v1.589H.285A.285.285 0 000 5.32V7.62c0 .158.128.286.285.286h1.826v5.808c0 .157.128.285.285.285h2.382a.285.285 0 00.285-.285V7.907h2.135a.285.285 0 00.285-.286l.001-2.301a.286.286 0 00-.286-.286H5.063V3.687c0-.647.155-.975.998-.975h1.223a.285.285 0 00.285-.286V.288a.286.286 0 00-.285-.285z" fill="#FFF" fill-rule="nonzero"></path></svg></a><a class="MuiBox-root jss108" data-testid="linkedin" href="https://www.linkedin.com/company/rently/" target="_blank"><svg width="15" height="14" viewBox="0 0 15 14" class="jss100"><title>icon linkedin white</title><path d="M14.664 8.583V14h-3.14V8.946c0-1.27-.454-2.136-1.59-2.136-.869 0-1.385.584-1.612 1.149-.083.202-.104.483-.104.766V14H5.076s.043-8.56 0-9.446h3.141v1.339l-.02.03h.02v-.03c.418-.643 1.163-1.561 2.831-1.561 2.067 0 3.616 1.35 3.616 4.251zM1.791 0C.716 0 .013.705.013 1.632c0 .907.683 1.633 1.736 1.633h.02c1.096 0 1.778-.726 1.778-1.633C3.526.705 2.865 0 1.79 0zM.2 14h3.14V4.554H.2V14z" fill="#FFF" fill-rule="nonzero"></path></svg></a><a class="MuiBox-root jss109" data-testid="instagram" href="https://www.instagram.com/rentlysolutions/" target="_blank"><svg width="15" height="14" viewBox="0 0 15 14" class="jss100"><title>icon instagram white</title><path d="M1.905 0h10.406c.988 0 1.797.732 1.797 1.797v10.406c0 1.065-.809 1.797-1.797 1.797H1.905c-.988 0-1.797-.732-1.797-1.797V1.797C.108.732.917 0 1.905 0zm8.401 1.555a.632.632 0 00-.63.63v1.51c0 .346.284.63.63.63h1.583c.347 0 .63-.284.63-.63v-1.51a.632.632 0 00-.63-.63h-1.583zm2.22 4.366h-1.232c.116.38.18.783.18 1.2 0 2.33-1.95 4.217-4.353 4.217-2.403 0-4.351-1.888-4.351-4.216 0-.418.063-.821.18-1.201H1.664v5.913c0 .306.25.557.556.557h9.75c.306 0 .556-.25.556-.557V5.921zM7.12 4.245c-1.552 0-2.811 1.22-2.811 2.725 0 1.504 1.259 2.724 2.811 2.724 1.553 0 2.812-1.22 2.812-2.724 0-1.505-1.259-2.725-2.812-2.725z" fill="#FFF" fill-rule="nonzero"></path></svg></a><a class="MuiBox-root jss110" data-testid="twitter" href="https://twitter.com/rentlysolutions" target="_blank"><svg width="17" height="13" viewBox="0 0 17 13" class="jss100"><title>icon twitter white</title><path d="M16.556 1.538a6.556 6.556 0 01-1.885.517A3.297 3.297 0 0016.114.24a6.619 6.619 0 01-2.086.797A3.283 3.283 0 008.434 4.03 9.32 9.32 0 011.666.6a3.258 3.258 0 00-.444 1.65c0 1.14.58 2.144 1.46 2.732a3.283 3.283 0 01-1.487-.412v.041a3.286 3.286 0 002.633 3.22 3.325 3.325 0 01-.865.115c-.212 0-.417-.021-.618-.061a3.285 3.285 0 003.066 2.28 6.587 6.587 0 01-4.077 1.403c-.265 0-.526-.016-.783-.045A9.28 9.28 0 005.584 13c6.04 0 9.341-5.002 9.341-9.34l-.011-.426a6.556 6.556 0 001.642-1.696z" fill="#FFF" fill-rule="nonzero"></path></svg></a></div></div></div><hr class="MuiDivider-root jss101"><div class="jss102">Copyright 2025 Rently. All Rights Reserved. |Patented Technology: 9,875,590,9,881,347 |<a class="MuiBox-root jss111" data-testid="TermsOfUseFooter" href="https://use.rently.com/terms-of-use/" target="_blank" rel="noopener noreferrer">Terms of Use</a></div></div></div></div></div></body></html>

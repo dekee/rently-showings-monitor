@@ -1,0 +1,57 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rently-showings-monitor
+  namespace: rently-showings-monitor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rently-showings-monitor
+  template:
+    metadata:
+      labels:
+        app: rently-showings-monitor
+    spec:
+      containers:
+        - name: app
+          image: rently-showings-monitor:dev
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8080
+          env:
+            # Scraper configuration
+            - name: RENTLY_POLL_DELAY_MS
+              value: "300000"
+            - name: RENTLY_HEADLESS
+              value: "true"
+            - name: RENTLY_STORAGE_STATE_PATH
+              value: "/data/storage-state.json"
+
+            # H2 data path inside the container
+            - name: SPRING_DATASOURCE_URL
+              value: "jdbc:h2:file:/data/rently;MODE=PostgreSQL"
+
+          envFrom:
+            - secretRef:
+                name: rently-notify
+                optional: true
+
+          volumeMounts:
+            - name: data
+              mountPath: /data
+
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "256Mi"
+            limits:
+              cpu: "1000m"
+              memory: "1Gi"
+
+      volumes:
+        - name: data
+          emptyDir: {}
+
+

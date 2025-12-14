@@ -1,0 +1,8 @@
+.gradle/
+build/
+out/
+data/
+*.iml
+.idea/
+*.log
+storage-state.json

@@ -1,0 +1,307 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" class=""><head>
+  <title>Rently Manager</title>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="vUTtD9AAHor4WrEpkhXLCALW7j7lhEVJwclAkAlPORQwKQiHccWTjeuhMT_zESkO6AUpQv7ouqTGQYvOl-TZ3w">
+
+<!--script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj7uRapohMwb3wcE5WbrTKoDYhljlAOsc&libraries=places,geometry"></script-->
+<script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="//d3cgccwjg3y75t.cloudfront.net/assets/richmarker-compiled-6cb33e3b373d7d4d3d7c491cc1861460b8514e7706dac5f6e44937637d2adbfd.js"></script>
+
+<script src="//d3cgccwjg3y75t.cloudfront.net/assets/application-4896867908c920dc60c8ae71ca4942f833d78e4b815dbe767b138af0f4da9938.js"></script>
+
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-25493738-6', 'auto', {'allowLinker': false});
+  ga('create', 'UA-25493738-5', 'auto',{name: 'renterTracker', 'allowLinker': true});
+  ga('renterTracker.require', 'linker');
+  ga('renterTracker.linker:autoLink', ['rently.com']);
+
+  ga('set', 'dimension2', 'platforms');
+  ga('set', 'dimension3', 'platforms-react_router');
+
+  ga('send', 'pageview');
+  ga('send', 'event', 'platforms', 'platforms-react_router');
+
+  function custom_ga_event(ga_category, ga_action, ga_label) {
+      ga('send', 'event', ga_category, ga_action, ga_label);
+  }
+</script>
+
+<script type="text/javascript">
+    $(function () {
+      // decorate inputs
+      $("input, textarea").popover({
+          offset: 10, trigger: "focus"
+      });
+    });
+    $(function () {
+      $("input.datepicker").datepicker({dateFormat: "yy-mm-dd"});
+    });
+
+    $(document).ready(function() {
+
+        $( document ).ajaxSuccess(function( event, xhr, settings, data ) {
+
+        });
+    });
+</script>
+
+  <link rel="stylesheet" href="//d3cgccwjg3y75t.cloudfront.net/assets/application-db15901f92563c5c44179154a842d4be3a434c360c0d905eb06f2868d7de87bc.css" media="screen">
+
+<link rel="icon" href="/new_favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/new_favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+
+
+
+  <meta property="og:app_id" content="264166933594659">
+<meta property="og:title" content="Rently - Self Service Property Showing">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://rently.com">
+<meta property="og:image" content="//d3cgccwjg3y75t.cloudfront.net/assets/logo-7194c4189dcce29bbbeede696716cdcab39375ec774042f03e38c45629fee72c.png">
+<meta property="og:site_name" content="Rently">
+<meta property="og:description" content="Using Rently's self service showing solution property managers can easily provide access to renters and vendors without having to go out to the property. Eliminate leasing turn, save money, and rent faster today!">
+<meta name="description" content="Using Rently's self service showing solution property managers can easily provide access to renters and vendors without having to go out to the property. Eliminate leasing turn, save money, and rent faster today!">
+<meta name="keywords" content="self service showing, property self tour, lockbox showing, lockbox open house showing">
+  <script type="text/javascript">
+  $(function () {
+    var iframe = document.getElementById("platform-iframe");
+    var iframeOrigin = iframe.src.split("/").splice(0, 3).join("/");
+    function postMessage(type, payload, id) {
+      payload = payload || {};
+      var message = JSON.stringify({ type, payload, id });
+      iframe.contentWindow.postMessage(message, iframeOrigin);
+    }
+
+    function postAsyncMessageResponse(action, responsePayload) {
+      postMessage(action.type, responsePayload, action.id);
+    }
+
+    function handleSigninRequest(action) {
+      try {
+        $.post('/api/v2/authentication/signin', action.payload, function (response) {
+          postAsyncMessageResponse(action, response);
+          if (response.success) {
+            if (response.endpoint) {
+              window.parent.location = response.endpoint;
+            }
+          }
+        });
+      } catch (error) {
+        const responsePayload = { success: false, message: String(error) };
+        postAsyncMessageResponse(action, responsePayload);
+      }
+    }
+
+    function handleSignupRequest(action) {
+      try {
+        $.post('/api/v2/authentication/signup', action.payload, function(response) {
+          postAsyncMessageResponse(action, response);
+          if (response.success) {
+            window.parent.location = '/platform/order_summary';
+          }
+        });
+      } catch (error) {
+        const responsePayload = { success: false, message: String(error) };
+        postAsyncMessageResponse(action, responsePayload);
+      }
+    }
+
+    function handleImpersonate(action) {
+      try {
+        $.post('/api/v2/authentication/impersonate_login', action.payload, function(response) {
+          postAsyncMessageResponse(action, response);
+          if (response.success) {
+            if (response.platform) {
+              window.parent.location = `/platform/${response.endpoint}`;
+            } else {
+              if (response.isVendor) {
+                window.parent.location = '/vendors';
+              } else {
+                window.parent.location = '/properties';
+              }
+            }
+          }
+        });
+      } catch (error) {
+        const responsePayload = { success: false, message: String(error) };
+        postAsyncMessageResponse(action, responsePayload);
+      }
+    }
+
+    function handleGetSessionStorage(action) {
+      const { payload: { name } } = action;
+      let responsePayload;
+      try {
+        responsePayload = window.sessionStorage.getItem(name);
+        postAsyncMessageResponse(action, { success: true, value: responsePayload });
+      } catch (error) {
+        const responsePayload = { success: false };
+        postAsyncMessageResponse(action, responsePayload);
+        console.log(error);
+      }
+    }
+
+    function handleSetSessionStorage(action) {
+      const { payload: { name, value } } = action;
+      try {
+        window.sessionStorage.setItem(name, value);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    function handleClearSessionStorage(action) {
+      const { payload: { name } } = action;
+      try {
+        window.sessionStorage.removeItem(name);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    function handleGetLocalStorage(action) {
+      const { payload: { name } } = action;
+      let responsePayload;
+      try {
+        responsePayload = window.localStorage.getItem(name);
+        postAsyncMessageResponse(action, { success: true, value: responsePayload });
+      } catch (error) {
+        const responsePayload = { success: false };
+        postAsyncMessageResponse(action, responsePayload);
+        console.log(error);
+      }
+    }
+
+    function handleSetLocalStorage(action) {
+      const { payload: { name, value } } = action;
+      try {
+        window.localStorage.setItem(name, value);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    function handleClearLocalStorage(action) {
+      const { payload: { name } } = action;
+      try {
+        window.localStorage.removeItem(name);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+
+    //it will create a new meta tag for view port to make portal as responsive
+    //https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag
+    function createViewport(id, content="") {
+      if (document.querySelectorAll("[id='viewport']").length > 0) {
+        document.querySelector("[id='viewport']").remove();
+      }
+      const meta = document.createElement('meta');
+      meta.id = id;
+      meta.name = id;
+      meta.content = content;
+      document.head.append(meta);
+    }
+
+    //this condition will make properties page as responsive not others
+    function updateMetaTag(id, path) {
+      if (path === "/platform/dashboard" || path === "/platform/showings" || path === "/platform/properties" || path === "/platform/security" || path.includes("/platform/onboarding")) {
+        createViewport(id, "width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=0");
+      } else if (window.location.href.includes('platform/dashboard') || window.location.href.includes('platform/showings') || window.location.href.includes('platform/properties') || window.location.href.includes('platform/onboarding')) {
+        createViewport(id,"maximum-scale=1, user-scalable=0");
+      }
+    }
+
+    function receiveMessage(event) {
+      if (event.origin !== iframeOrigin) {
+        return;
+      }
+
+      const login = ( window.location.href.includes('platform/get_started') || window.location.href.includes('platform/sign_up') || window.location.href.includes('platform/sign_in') || window.location.href.includes('platform/forgot_password')  || window.location.href.includes('platform/reset_password')  || window.location.href.includes('platform/activity_log') || window.location.href.includes('platform/claim_appointment'));
+
+      var action;
+      try {
+        action = JSON.parse(event.data);
+        if (typeof action !== "object") {
+          return;
+        }
+      } catch (error) {
+        console.error('Failed to parse message from iframe:', event.data);
+      }
+      if (!login) {
+        $.post('/platform/verify_session', { type: action.type, path: window.location.pathname });
+      }
+      if (action.type === 'authorization' && !login) {
+        $.post('/platform/authorization', function (data) {
+          handleSetLocalStorage({
+            payload: {
+              name: 'agent_access_token',
+              value: data.rentlyToken
+            }
+          });
+          postAsyncMessageResponse(action, data);
+        })
+      } else if (action.type === 'requestSignup') {
+        handleSignupRequest(action);
+      } else if (action.type === 'requestSignin') {
+        handleSigninRequest(action);
+      } else if (action.type === 'requestImpersonate') {
+        handleImpersonate(action);
+      } else if (action.type === 'replaceHistory') {
+        updateMetaTag("viewport", action.payload.path);
+        window.history.replaceState({}, '', action.payload.path);
+      } else if (action.type === 'setLocationHref') {
+        window.location.href = action.payload.href;
+      } else if (action.type === 'signOut') {
+        $('#signout').submit();
+      } else if (action.type === 'getSessionStorage') {
+        handleGetSessionStorage(action);
+      } else if (action.type === 'setSessionStorage') {
+        handleSetSessionStorage(action);
+      } else if (action.type === 'clearSessionStorage') {
+        handleClearSessionStorage(action);
+      } else if (action.type === 'showCaptchaAPI') {
+        $.get('/platform/show_captcha_for_api_request', function(data) {
+          postAsyncMessageResponse(action, data);
+        });
+      } else if (action.type === 'getLocalStorage') {
+        handleGetLocalStorage(action);
+      } else if (action.type === 'setLocalStorage') {
+        handleSetLocalStorage(action);
+      } else if (action.type === 'clearLocalStorage') {
+        handleClearLocalStorage(action);
+      }
+    }
+    window.addEventListener("message", receiveMessage);
+  });
+</script>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+<body>
+<style type="text/css">
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-image: none;
+    background-color: #F9F9FB;
+  }
+</style>
+     <form id="signout" style="display:none;" action="https://armor.rently.com/agent_identities/sign_out" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓" autocomplete="off" data-original-title="" style=""></form>
+  <iframe id="platform-iframe" src="https://d2q1i7kmq3gfq1.cloudfront.net/activity_log?property=vyq3ntxv" style="border:0;margin:0;padding:0;width:100%;height:100%;" allow="clipboard-write; fullscreen" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-modals allow-downloads allow-top-navigation allow-top-navigation-by-user-activation allow-popups-to-escape-sandbox"></iframe>
+
+
+</body></html>
