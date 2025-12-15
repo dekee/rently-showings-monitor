@@ -29,9 +29,21 @@ spec:
             - name: RENTLY_STORAGE_STATE_PATH
               value: "/data/storage-state.json"
 
-            # H2 data path inside the container
+            # Shared DB (PostgreSQL) for multi-replica deployments
             - name: SPRING_DATASOURCE_URL
-              value: "jdbc:h2:file:/data/rently;MODE=PostgreSQL"
+              value: "jdbc:postgresql://postgres.rently-showings-monitor.svc.cluster.local:5432/rently"
+            - name: SPRING_DATASOURCE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-auth
+                  key: POSTGRES_USER
+            - name: SPRING_DATASOURCE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-auth
+                  key: POSTGRES_PASSWORD
+            - name: SPRING_JPA_DATABASE_PLATFORM
+              value: "org.hibernate.dialect.PostgreSQLDialect"
 
           envFrom:
             - secretRef:

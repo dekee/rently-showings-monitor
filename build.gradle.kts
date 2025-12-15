@@ -32,6 +32,7 @@ dependencies {
   implementation("com.microsoft.playwright:playwright:1.48.0")
 
   runtimeOnly("com.h2database:h2")
+  runtimeOnly("org.postgresql:postgresql")
 
   testImplementation("org.springframework.boot:spring-boot-starter-test")
 }

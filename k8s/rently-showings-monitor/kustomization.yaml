@@ -3,6 +3,8 @@ kind: Kustomization
 
 resources:
   - namespace.yaml
+  - postgres-service.yaml
+  - postgres-statefulset.yaml
   # Create your own secret (do not commit real credentials). Use secret-template.yaml as a starting point.
   # - secret-template.yaml
   - deployment.yaml
