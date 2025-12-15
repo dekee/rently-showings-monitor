@@ -9,9 +9,7 @@ spec:
     server: https://kubernetes.default.svc
     namespace: rently-showings-monitor
   source:
-    # TODO: set this to the Git URL Argo CD can reach (GitHub/GitLab/etc).
-    # Example: https://github.com/<you>/rently-showings-monitor.git
-    repoURL: REPLACE_WITH_YOUR_GIT_REPO_URL
+    repoURL: https://github.com/dekee/rently-showings-monitor.git
     targetRevision: main
     path: k8s/rently-showings-monitor
   syncPolicy:

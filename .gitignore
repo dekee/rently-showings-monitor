@@ -6,3 +6,5 @@ data/
 .idea/
 *.log
 storage-state.json
+debug/
+.local/

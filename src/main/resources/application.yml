@@ -3,7 +3,7 @@ server:
 
 rently:
   # REQUIRED: set this to your activity log URL
-  url: "https://secure.rently.com/platform/activity_log?property=vyq3ntxv"
+  url: "" # set this locally, or provide via Kubernetes Secret/ENV
   poll-delay-ms: 300000   # 5 minutes
   headless: false
   # Optional: persist cookies/session across runs (helpful even if login becomes required)
@@ -12,11 +12,11 @@ rently:
 notify:
   # Phone push notifications via Pushover (https://pushover.net/)
   # 1) Create an app to get an API token
-  # 2) Installshover on your phone and copy your user key
+  # 2) Install Pushover on your phone and copy your user key
   pushover:
-    enabled: true
-    token: "a8v9a14hvzze8a1poruvqof8zmmur3"   # Pushover APP/API token (from your Pushover app)
-    user: "ukjbanq2hqet5bumr6hgpik9viftxy"    # Pushover user/group key (from your account)
+    enabled: false
+    token: ""   # Pushover APP/API token (from your Pushover app)
+    user: ""    # Pushover user/group key (from your account)
     device: ""  # optional
     sound: ""   # optional
 
