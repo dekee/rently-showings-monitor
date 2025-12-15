@@ -22,10 +22,8 @@ notify:
 
 spring:
   datasource:
+    # Default local DB (overridden in Kubernetes via SPRING_DATASOURCE_URL/USERNAME/PASSWORD)
     url: jdbc:h2:file:./data/rently;AUTO_SERVER=TRUE;MODE=PostgreSQL
-    driverClassName: org.h2.Driver
-    username: sa
-    password:
   jpa:
     hibernate:
       ddl-auto: update
