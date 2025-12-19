@@ -28,6 +28,9 @@ spec:
               value: "true"
             - name: RENTLY_STORAGE_STATE_PATH
               value: "/data/storage-state.json"
+            # Persist Playwright browser downloads in the mounted data volume
+            - name: PLAYWRIGHT_BROWSERS_PATH
+              value: "/data/ms-playwright"
 
             # Shared DB (PostgreSQL) for multi-replica deployments
             - name: SPRING_DATASOURCE_URL
