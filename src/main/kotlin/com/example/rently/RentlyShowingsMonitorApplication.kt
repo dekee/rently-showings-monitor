@@ -1,5 +1,6 @@
 package com.example.rently
 
+import com.example.rently.notify.NtfyProperties
 import com.example.rently.notify.PushoverProperties
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.context.properties.EnableConfigurationProperties
@@ -8,7 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling
 
 @SpringBootApplication
 @EnableScheduling
-@EnableConfigurationProperties(RentlyProperties::class, PushoverProperties::class)
+@EnableConfigurationProperties(RentlyProperties::class, PushoverProperties::class, NtfyProperties::class)
 class RentlyShowingsMonitorApplication
 
 fun main(args: Array<String>) {

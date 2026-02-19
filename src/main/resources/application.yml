@@ -10,6 +10,17 @@ rently:
   storage-state-path: "storage-state.json"
 
 notify:
+  # Free push notifications via ntfy (https://ntfy.sh/)
+  # 1) Install the ntfy app on your Android phone
+  # 2) Subscribe to your chosen topic in the app
+  # 3) Set the same topic below
+  ntfy:
+    enabled: false
+    server: "https://ntfy.sh"
+    topic: "rently-fawn-lane"
+    priority: 3     # 1=min, 2=low, 3=default, 4=high, 5=urgent
+    tags: ""        # optional comma-separated emoji tags (e.g. "house,calendar")
+
   # Phone push notifications via Pushover (https://pushover.net/)
   # 1) Create an app to get an API token
   # 2) Install Pushover on your phone and copy your user key
