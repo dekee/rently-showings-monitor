@@ -15,8 +15,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: rently-showings-monitor:dev
-          imagePullPolicy: IfNotPresent
+          image: dekee/rently-showings-monitor:latest
           ports:
             - name: http
               containerPort: 8080
